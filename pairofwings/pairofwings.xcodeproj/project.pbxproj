@@ -13,6 +13,8 @@
 		ACEA898719F93EAC009C752D /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA898619F93EAC009C752D /* Value.swift */; };
 		ACEA89BB19F940A9009C752D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA89BA19F940A9009C752D /* Observable.swift */; };
 		ACEA89BD19F94A02009C752D /* valueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA89BC19F94A01009C752D /* valueTests.swift */; };
+		ACEA89C119F95049009C752D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA89C019F95049009C752D /* Utils.swift */; };
+		ACEA89C319F956BE009C752D /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA89C219F956BE009C752D /* UtilsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 		ACEA898619F93EAC009C752D /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Value.swift; path = base/Value.swift; sourceTree = "<group>"; };
 		ACEA89BA19F940A9009C752D /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		ACEA89BC19F94A01009C752D /* valueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = valueTests.swift; sourceTree = "<group>"; };
+		ACEA89C019F95049009C752D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		ACEA89C219F956BE009C752D /* UtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				ACEA897B19F9399E009C752D /* pairofwingsTests.swift */,
 				ACEA89BC19F94A01009C752D /* valueTests.swift */,
 				ACEA897919F9399E009C752D /* Supporting Files */,
+				ACEA89C219F956BE009C752D /* UtilsTests.swift */,
 			);
 			path = pairofwingsTests;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 			children = (
 				ACEA898619F93EAC009C752D /* Value.swift */,
 				ACEA89BA19F940A9009C752D /* Observable.swift */,
+				ACEA89C019F95049009C752D /* Utils.swift */,
 			);
 			name = base;
 			sourceTree = "<group>";
@@ -228,6 +234,7 @@
 			files = (
 				ACEA89BB19F940A9009C752D /* Observable.swift in Sources */,
 				ACEA898719F93EAC009C752D /* Value.swift in Sources */,
+				ACEA89C119F95049009C752D /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +244,7 @@
 			files = (
 				ACEA897C19F9399E009C752D /* pairofwingsTests.swift in Sources */,
 				ACEA89BD19F94A02009C752D /* valueTests.swift in Sources */,
+				ACEA89C319F956BE009C752D /* UtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

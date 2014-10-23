@@ -1,5 +1,5 @@
 //
-//  valueTests.swift
+//  UtilsTests.swift
 //  pairofwings
 //
 //  Created by Jose Manuel Sánchez Peñarroja on 23/10/14.
@@ -9,7 +9,7 @@
 import Cocoa
 import XCTest
 
-class valueTests: XCTestCase {
+class UtilsTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
@@ -21,32 +21,18 @@ class valueTests: XCTestCase {
         super.tearDown()
     }
 
-    func testFixedValue() {
-		var number = FixedValue(12)
+    func testRandom() {
+        var value = random(0,10)
+		XCTAssert(value>=0);
+		XCTAssert(value<=10);
 		
-		XCTAssert(number==12);
-		XCTAssert(number.currentValue==12);
 		
-		var timesCalled = 0
-		
-		number.addObserver(.DidSet) {
-			XCTAssert($1==5);
-			timesCalled++
-		}
-
-		number.currentValue = 5
-		
-		XCTAssert(number==5);
-		XCTAssert(timesCalled==1)
     }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
-			var number = FixedValue()
-			for i=0...1000 {
-				number.currentValue = 
-			}
+            // Put the code you want to measure the time of here.
         }
     }
 
