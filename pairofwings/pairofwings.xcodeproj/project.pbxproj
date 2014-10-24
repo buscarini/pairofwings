@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC6C99F019FA711C0026D3A4 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99EF19FA711C0026D3A4 /* Validation.swift */; };
+		AC6C99F019FA711C0026D3A4 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99EF19FA711C0026D3A4 /* Validators.swift */; };
 		AC6C99F219FA75970026D3A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F119FA75970026D3A4 /* Extensions.swift */; };
-		AC6C99F419FA87670026D3A4 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F319FA87670026D3A4 /* Condition.swift */; };
+		AC6C99F419FA87670026D3A4 /* Conditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F319FA87670026D3A4 /* Conditions.swift */; };
 		AC6C99F619FA8A610026D3A4 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F519FA8A600026D3A4 /* ValidatorTests.swift */; };
 		AC6C99F819FA8AF30026D3A4 /* ConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F719FA8AF30026D3A4 /* ConditionTests.swift */; };
 		AC6C99FA19FA93DB0026D3A4 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F919FA93DB0026D3A4 /* Types.swift */; };
+		AC6C99FC19FA9AD40026D3A4 /* Behaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99FB19FA9AD40026D3A4 /* Behaviors.swift */; };
+		AC6C99FE19FA9F1E0026D3A4 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99FD19FA9F1E0026D3A4 /* ViewControllers.swift */; };
 		ACEA897519F9399E009C752D /* pairofwings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA896919F9399D009C752D /* pairofwings.framework */; };
-		ACEA898719F93EAC009C752D /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA898619F93EAC009C752D /* Value.swift */; };
+		ACEA898719F93EAC009C752D /* Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA898619F93EAC009C752D /* Values.swift */; };
 		ACEA89BB19F940A9009C752D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA89BA19F940A9009C752D /* Observable.swift */; };
 		ACEA89BD19F94A02009C752D /* ValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA89BC19F94A01009C752D /* ValueTests.swift */; };
 		ACEA89C119F95049009C752D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA89C019F95049009C752D /* Utils.swift */; };
@@ -32,18 +34,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC6C99EF19FA711C0026D3A4 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		AC6C99EF19FA711C0026D3A4 /* Validators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		AC6C99F119FA75970026D3A4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		AC6C99F319FA87670026D3A4 /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		AC6C99F319FA87670026D3A4 /* Conditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conditions.swift; sourceTree = "<group>"; };
 		AC6C99F519FA8A600026D3A4 /* ValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 		AC6C99F719FA8AF30026D3A4 /* ConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionTests.swift; sourceTree = "<group>"; };
 		AC6C99F919FA93DB0026D3A4 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		AC6C99FB19FA9AD40026D3A4 /* Behaviors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behaviors.swift; sourceTree = "<group>"; };
+		AC6C99FD19FA9F1E0026D3A4 /* ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		ACEA896919F9399D009C752D /* pairofwings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pairofwings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEA896D19F9399D009C752D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEA896E19F9399D009C752D /* pairofwings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pairofwings.h; sourceTree = "<group>"; };
 		ACEA897419F9399E009C752D /* pairofwingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pairofwingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEA897A19F9399E009C752D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACEA898619F93EAC009C752D /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Value.swift; path = base/Value.swift; sourceTree = "<group>"; };
+		ACEA898619F93EAC009C752D /* Values.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Values.swift; path = base/Values.swift; sourceTree = "<group>"; };
 		ACEA89BA19F940A9009C752D /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		ACEA89BC19F94A01009C752D /* ValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueTests.swift; sourceTree = "<group>"; };
 		ACEA89C019F95049009C752D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -130,11 +134,13 @@
 			children = (
 				AC6C99F919FA93DB0026D3A4 /* Types.swift */,
 				AC6C99F119FA75970026D3A4 /* Extensions.swift */,
-				ACEA898619F93EAC009C752D /* Value.swift */,
+				ACEA898619F93EAC009C752D /* Values.swift */,
 				ACEA89BA19F940A9009C752D /* Observable.swift */,
 				ACEA89C019F95049009C752D /* Utils.swift */,
-				AC6C99EF19FA711C0026D3A4 /* Validation.swift */,
-				AC6C99F319FA87670026D3A4 /* Condition.swift */,
+				AC6C99EF19FA711C0026D3A4 /* Validators.swift */,
+				AC6C99F319FA87670026D3A4 /* Conditions.swift */,
+				AC6C99FB19FA9AD40026D3A4 /* Behaviors.swift */,
+				AC6C99FD19FA9F1E0026D3A4 /* ViewControllers.swift */,
 			);
 			name = base;
 			sourceTree = "<group>";
@@ -246,11 +252,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6C99F219FA75970026D3A4 /* Extensions.swift in Sources */,
-				AC6C99F419FA87670026D3A4 /* Condition.swift in Sources */,
+				AC6C99F419FA87670026D3A4 /* Conditions.swift in Sources */,
 				ACEA89BB19F940A9009C752D /* Observable.swift in Sources */,
 				AC6C99FA19FA93DB0026D3A4 /* Types.swift in Sources */,
-				ACEA898719F93EAC009C752D /* Value.swift in Sources */,
-				AC6C99F019FA711C0026D3A4 /* Validation.swift in Sources */,
+				ACEA898719F93EAC009C752D /* Values.swift in Sources */,
+				AC6C99FE19FA9F1E0026D3A4 /* ViewControllers.swift in Sources */,
+				AC6C99FC19FA9AD40026D3A4 /* Behaviors.swift in Sources */,
+				AC6C99F019FA711C0026D3A4 /* Validators.swift in Sources */,
 				ACEA89C119F95049009C752D /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

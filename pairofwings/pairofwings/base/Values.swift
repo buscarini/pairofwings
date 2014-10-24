@@ -42,10 +42,6 @@ public class BaseValue <T> : Observable<T>, ValueProtocol  {
 	}
 	
 	public var currentValue : T? {	get { return raw }	}
-	
-//	public func __conversion() -> T? {
-//		return currentValue;
-//	}
 }
 
 public class Value<T> : BaseValue<T>,ValueChangeProtocol {
@@ -54,10 +50,6 @@ public class Value<T> : BaseValue<T>,ValueChangeProtocol {
 		set(newValue) { raw = newValue }
 		get { return raw }
 	}
-	
-//	public func __conversion(var value : T?) {
-//		raw = value
-//	}
 	
 	public override init() {
 		super.init()

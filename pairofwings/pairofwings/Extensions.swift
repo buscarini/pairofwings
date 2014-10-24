@@ -20,3 +20,27 @@ extension String {
 		return substringWithRange(Range(start: start, end: end))
 	}
 }
+
+extension Array {
+	func indexOfObject<T: Equatable>(objectToFind: T) -> Int? {
+		for (index,object) in enumerate(self) {
+			 if let to = object as? T {
+				if to==objectToFind {
+					return index
+				}
+			}
+		}
+		
+		return nil
+	}
+	
+	mutating func remove<T : Equatable>(object : T) -> Bool {
+		let index = indexOfObject(object)
+		if let i = index {
+			removeAtIndex(i)
+			return true
+		}
+		
+		return false
+	}
+}
