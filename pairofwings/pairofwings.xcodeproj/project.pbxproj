@@ -12,6 +12,7 @@
 		AC6C99F419FA87670026D3A4 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F319FA87670026D3A4 /* Condition.swift */; };
 		AC6C99F619FA8A610026D3A4 /* ValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F519FA8A600026D3A4 /* ValidatorTests.swift */; };
 		AC6C99F819FA8AF30026D3A4 /* ConditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F719FA8AF30026D3A4 /* ConditionTests.swift */; };
+		AC6C99FA19FA93DB0026D3A4 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C99F919FA93DB0026D3A4 /* Types.swift */; };
 		ACEA897519F9399E009C752D /* pairofwings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA896919F9399D009C752D /* pairofwings.framework */; };
 		ACEA898719F93EAC009C752D /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA898619F93EAC009C752D /* Value.swift */; };
 		ACEA89BB19F940A9009C752D /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA89BA19F940A9009C752D /* Observable.swift */; };
@@ -36,6 +37,7 @@
 		AC6C99F319FA87670026D3A4 /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		AC6C99F519FA8A600026D3A4 /* ValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorTests.swift; sourceTree = "<group>"; };
 		AC6C99F719FA8AF30026D3A4 /* ConditionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConditionTests.swift; sourceTree = "<group>"; };
+		AC6C99F919FA93DB0026D3A4 /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		ACEA896919F9399D009C752D /* pairofwings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pairofwings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEA896D19F9399D009C752D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACEA896E19F9399D009C752D /* pairofwings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pairofwings.h; sourceTree = "<group>"; };
@@ -106,9 +108,9 @@
 		ACEA897819F9399E009C752D /* pairofwingsTests */ = {
 			isa = PBXGroup;
 			children = (
+				ACEA897919F9399E009C752D /* Supporting Files */,
 				ACEA89C219F956BE009C752D /* UtilsTests.swift */,
 				ACEA89BC19F94A01009C752D /* ValueTests.swift */,
-				ACEA897919F9399E009C752D /* Supporting Files */,
 				AC6C99F519FA8A600026D3A4 /* ValidatorTests.swift */,
 				AC6C99F719FA8AF30026D3A4 /* ConditionTests.swift */,
 			);
@@ -126,6 +128,7 @@
 		ACEA898519F93E73009C752D /* base */ = {
 			isa = PBXGroup;
 			children = (
+				AC6C99F919FA93DB0026D3A4 /* Types.swift */,
 				AC6C99F119FA75970026D3A4 /* Extensions.swift */,
 				ACEA898619F93EAC009C752D /* Value.swift */,
 				ACEA89BA19F940A9009C752D /* Observable.swift */,
@@ -245,6 +248,7 @@
 				AC6C99F219FA75970026D3A4 /* Extensions.swift in Sources */,
 				AC6C99F419FA87670026D3A4 /* Condition.swift in Sources */,
 				ACEA89BB19F940A9009C752D /* Observable.swift in Sources */,
+				AC6C99FA19FA93DB0026D3A4 /* Types.swift in Sources */,
 				ACEA898719F93EAC009C752D /* Value.swift in Sources */,
 				AC6C99F019FA711C0026D3A4 /* Validation.swift in Sources */,
 				ACEA89C119F95049009C752D /* Utils.swift in Sources */,
