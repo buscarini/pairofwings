@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+
+extension String {
+	subscript (i: Int) -> String {
+		return String(Array(self)[i])
+	}
+	
+	subscript (r: Range<Int>) -> String {
+		var start = advance(startIndex, r.startIndex)
+		var end = advance(startIndex, r.endIndex)
+		return substringWithRange(Range(start: start, end: end))
+	}
+}

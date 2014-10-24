@@ -22,17 +22,30 @@ class UtilsTests: XCTestCase {
         super.tearDown()
     }
 
-    func testRandom() {
+    func testRandomInt() {
 		for _ in 0...1000 {
 			var value = Utils.random(0,10)
 			XCTAssert(value>=0);
 			XCTAssert(value<=10);
 		}
-		
-		
     }
 
-    func testPerformanceExample() {
+	func testRandomDouble() {
+		for _ in 0...1000 {
+			var value = Utils.random(0.0,1.0)
+			XCTAssert(value>=0.0);
+			XCTAssert(value<=1.0);
+		}
+	}
+	
+	func testRandomString() {
+		for i in 1...1000 {
+			var string = Utils.random(i)
+			XCTAssert(string.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)==i);
+		}
+	}
+	
+    func testRandomIntPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
 			for _ in 0...1000 {
@@ -41,4 +54,21 @@ class UtilsTests: XCTestCase {
         }
     }
 
+	func testRandomDoublePerformanceExample() {
+		// This is an example of a performance test case.
+		self.measureBlock() {
+			for _ in 0...1000 {
+				var value = Utils.random(0.0,1.0)
+			}
+		}
+	}
+	
+	func testRandomStringPerformanceExample() {
+		// This is an example of a performance test case.
+		self.measureBlock() {
+			for _ in 0...1000 {
+				var value = Utils.random(50)
+			}
+		}
+	}
 }

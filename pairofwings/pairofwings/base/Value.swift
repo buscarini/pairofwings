@@ -12,11 +12,13 @@ import Foundation
 public protocol ValueProtocol : ObservableProtocol {
 	typealias T
 	var currentValue : T? { get }
+//	func __conversion() -> T?
 }
 
 public protocol ValueChangeProtocol {
 	typealias T
 	var currentValue : T? { get set }
+//	func __conversion(T?)
 }
 
 public class BaseValue <T> : Observable<T>, ValueProtocol  {
@@ -41,20 +43,26 @@ public class BaseValue <T> : Observable<T>, ValueProtocol  {
 	
 	public var currentValue : T? {	get { return raw }	}
 	
-	public func __conversion() -> T? {
-		return currentValue;
-	}
+//	public func __conversion() -> T? {
+//		return currentValue;
+//	}
 }
 
-public class Value<T> : BaseValue<T> {
+public class Value<T> : BaseValue<T>,ValueChangeProtocol {
 	
 	public override var currentValue : T? {
 		set(newValue) { raw = newValue }
 		get { return raw }
 	}
 	
-	public func __conversion(var value : T?) {
-		raw = value
+//	public func __conversion(var value : T?) {
+//		raw = value
+//	}
+	
+	public override init() {
+		super.init()
+		
+		raw = nil
 	}
 	
 	public init (_ value: T?) {

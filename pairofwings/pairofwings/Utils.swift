@@ -18,5 +18,21 @@ public class Utils {
 		
 		return Double(arc4random_uniform(UInt32(max - min + 1))) + min
 	}
+	
+	public class func random(length: Int) -> String {
+		assert(length>0)
+		
+		let alphabet = "abcdefghijklmnopqrstuvwxyz"
+		let alphabetLength = alphabet.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+
+		var result = ""
+		for i in 0..<length {
+			let index = Int(arc4random_uniform(UInt32(alphabetLength)))
+			let character = alphabet[index % alphabetLength]
+			result += character
+		}
+		
+		return result
+	}
 }
 
