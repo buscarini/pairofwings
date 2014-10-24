@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 José Manuel Sánchez. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 import XCTest
+import pairofwings
 
 class UtilsTests: XCTestCase {
 
@@ -22,9 +23,11 @@ class UtilsTests: XCTestCase {
     }
 
     func testRandom() {
-        var value = random(0,10)
-		XCTAssert(value>=0);
-		XCTAssert(value<=10);
+		for _ in 0...1000 {
+			var value = Utils.random(0,10)
+			XCTAssert(value>=0);
+			XCTAssert(value<=10);
+		}
 		
 		
     }
@@ -32,7 +35,9 @@ class UtilsTests: XCTestCase {
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
-            // Put the code you want to measure the time of here.
+			for _ in 0...1000 {
+				var value = Utils.random(0,10)
+			}
         }
     }
 

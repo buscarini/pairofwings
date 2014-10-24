@@ -9,24 +9,23 @@
 import Foundation
 
 
-protocol ValueProtocol : Observable {
+public protocol ValueProtocol : ObservableProtocol {
 	typealias T
 	var currentValue : T? { get }
 }
 
-protocol ValueChangeProtocol {
+public protocol ValueChangeProtocol {
 	typealias T
 	var currentValue : T? { get set }
 }
 
-class Value <T> : ValueProtocol  {
-	var observers = [ ObservationType : Array<(T?, T?) -> ()>]()
+public class BaseValue <T> : Observable<T>, ValueProtocol  {
 	
 	var raw : T? {
 		willSet {
 			if let list = observers[.WillSet] {
 				for closure in list {
-					closure(self.raw,newValue)
+					closure(newValue,self.raw)
 				}
 			}
 		}
@@ -34,42 +33,31 @@ class Value <T> : ValueProtocol  {
 		didSet {
 			if let list = observers[.DidSet] {
 				for closure in list {
-					closure(oldValue,self.raw)
+					closure(self.raw,oldValue)
 				}
 			}
 		}
 	}
 	
-	var currentValue : T? {	get { return raw }	}
+	public var currentValue : T? {	get { return raw }	}
 	
-	func addObserver(type: ObservationType,closure : (T?,T?) -> ()) {
-		if observers[type]==nil {
-			observers[type] = Array<(T?, T?) -> ()>()
-		}
-		
-		var expandedArray = observers[type]!
-		expandedArray.append(closure)
-		observers[type] = expandedArray
-	}
-	
-	func __conversion() -> T? {
+	public func __conversion() -> T? {
 		return currentValue;
 	}
-	
 }
 
-class FixedValue<T> : Value<T> {
+public class Value<T> : BaseValue<T> {
 	
-	override var currentValue : T? {
+	public override var currentValue : T? {
 		set(newValue) { raw = newValue }
 		get { return raw }
 	}
 	
-	func __conversion(var value : T) {
+	public func __conversion(var value : T?) {
 		raw = value
 	}
 	
-	init (value: T?) {
+	public init (_ value: T?) {
 		super.init()
 		
 		raw = value

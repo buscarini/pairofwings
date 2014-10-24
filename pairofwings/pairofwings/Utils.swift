@@ -8,12 +8,15 @@
 
 import Foundation
 
-func random(min: Int, max:Int) -> Int {
-	return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+public class Utils {
+	public class func random(min: Int, _ max:Int) -> Int {
+		return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+	}
+	
+	public class func random(min: Double,_ max : Double) -> Double {
+		assert(max>min)
+		
+		return Double(arc4random_uniform(UInt32(max - min + 1))) + min
+	}
 }
 
-func random(min: Double, max : Double) -> Double {
-	assert(max>min)
-
-	return Double(arc4random_uniform(UInt32(max - min + 1))) + min
-}

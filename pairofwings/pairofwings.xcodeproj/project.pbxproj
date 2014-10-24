@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ACEA896F19F9399D009C752D /* pairofwings.h in Headers */ = {isa = PBXBuildFile; fileRef = ACEA896E19F9399D009C752D /* pairofwings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACEA897519F9399E009C752D /* pairofwings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEA896919F9399D009C752D /* pairofwings.framework */; };
 		ACEA897C19F9399E009C752D /* pairofwingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA897B19F9399E009C752D /* pairofwingsTests.swift */; };
 		ACEA898719F93EAC009C752D /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEA898619F93EAC009C752D /* Value.swift */; };
@@ -100,9 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				ACEA897B19F9399E009C752D /* pairofwingsTests.swift */,
+				ACEA89C219F956BE009C752D /* UtilsTests.swift */,
 				ACEA89BC19F94A01009C752D /* valueTests.swift */,
 				ACEA897919F9399E009C752D /* Supporting Files */,
-				ACEA89C219F956BE009C752D /* UtilsTests.swift */,
 			);
 			path = pairofwingsTests;
 			sourceTree = "<group>";
@@ -132,7 +131,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACEA896F19F9399D009C752D /* pairofwings.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +424,7 @@
 				ACEA898119F9399E009C752D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACEA898219F9399E009C752D /* Build configuration list for PBXNativeTarget "pairofwingsTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +433,7 @@
 				ACEA898419F9399E009C752D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

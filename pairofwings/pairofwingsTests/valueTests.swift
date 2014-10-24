@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 José Manuel Sánchez. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 import XCTest
+import pairofwings
 
 class valueTests: XCTestCase {
 
@@ -21,31 +22,37 @@ class valueTests: XCTestCase {
         super.tearDown()
     }
 
-    func testFixedValue() {
-		var number = FixedValue(12)
+    func testValue() {
+		var number = Value(12)
 		
-		XCTAssert(number==12);
 		XCTAssert(number.currentValue==12);
 		
 		var timesCalled = 0
 		
 		number.addObserver(.DidSet) {
-			XCTAssert($1==5);
+			[unowned number] (newValue,oldValue) in
+			XCTAssert(newValue==number.currentValue);
 			timesCalled++
 		}
 
 		number.currentValue = 5
 		
-		XCTAssert(number==5);
+		let value = number.currentValue;
+		XCTAssert(value==5);
 		XCTAssert(timesCalled==1)
-    }
+		
+		number.currentValue = 7
+		
+		XCTAssert(number.currentValue==7);
+		XCTAssert(timesCalled==2)
+	}
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
-			var number = FixedValue()
-			for i=0...1000 {
-				number.currentValue = 
+			var number: Value<Int> = Value(nil)
+			for _ in 0...1000 {
+				number.currentValue = Utils.random(0,100)
 			}
         }
     }

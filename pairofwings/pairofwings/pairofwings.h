@@ -8,12 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for pairofwings.
 FOUNDATION_EXPORT double pairofwingsVersionNumber;
-
-//! Project version string for pairofwings.
 FOUNDATION_EXPORT const unsigned char pairofwingsVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <pairofwings/PublicHeader.h>
 
 
