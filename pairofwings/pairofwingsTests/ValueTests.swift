@@ -25,25 +25,25 @@ class ValueTests: XCTestCase {
     func testValue() {
 		var number = Value(12)
 
-		XCTAssert(number.currentValue==12);
+		XCTAssert(number.value==12);
 		
 		var timesCalled = 0
 		
 		number.addObserver(.DidSet) {
 			[unowned number] (newValue,oldValue) in
-			XCTAssert(newValue==number.currentValue);
+			XCTAssert(newValue==number.value);
 			timesCalled++
 		}
 
-		number.currentValue = 5
+		number.value = 5
 		
-		let value = number.currentValue;
+		let value = number.value;
 		XCTAssert(value==5);
 		XCTAssert(timesCalled==1)
 		
-		number.currentValue = 7
+		number.value = 7
 		
-		XCTAssert(number.currentValue==7);
+		XCTAssert(number.value==7);
 		XCTAssert(timesCalled==2)
 	}
 
@@ -52,7 +52,7 @@ class ValueTests: XCTestCase {
         self.measureBlock() {
 			var number: Value<Int> = Value()
 			for _ in 0...1000 {
-				number.currentValue = Utils.random(0,100)
+				number.value = Utils.random(0,100)
 			}
         }
     }

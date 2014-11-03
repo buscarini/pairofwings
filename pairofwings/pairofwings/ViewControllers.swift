@@ -14,7 +14,7 @@ public class ViewController<Behavior:ViewControllerBehaviorProtocol> : UIViewCon
 	    fatalError("init(coder:) has not been implemented")
 	}
 	
-	var behaviors: [Behavior] = []
+	private var behaviors: [Behavior] = []
 	
 	public func addBehavior(behavior: Behavior) {
 		behaviors.append(behavior)
